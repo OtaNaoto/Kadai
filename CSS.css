@@ -8,12 +8,27 @@
     display: flex;
     justify-content: flex-end;
     
-    padding-top: 1vh;
+    padding: 4vh;
     background-image:  url("picture/企業ロゴ.jpg");
-    background-position: top left;
+    background-position: top 50% left 5%;
     background-repeat: no-repeat;
+}
+
+.smallmenu{
+    padding-left: 2vw;
+    font-weight: 600;
+}
+
+.btn--orange,
+a.btn--orange {
+  background-color: #EDD100;
+  border-radius: 100vh;
+  padding: 1vw 3vw;
+  margin: 0 2vw;
+  margin-top: -1%;
 
 }
+
 
 h4{
     font-weight: 400;
@@ -61,72 +76,75 @@ img{
 .group54{
     position: relative;
     height: 120vh;
-    width: 113vw;
-    margin-left: -17vw;
+    width: 95vw;
     margin-bottom: 2rem;
-    border-radius: 0.6em;
-    display: flex;
-    justify-content: start;
-
-    
+    border-radius: 0 0.6em 0.6em 0;
     background-color: #D9D9D9;
+    display: flex;
 }
 
+.group54 .icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 .group54 .icon1{
-    position: absolute;
-    top: 10vh;
-    left: 27vw;
+
     height: 160px;
     width: 185px;
     padding: 1.4rem 1rem 1.1rem 1.2rem;
     border-radius: 10rem;
     background-color: #ffffff;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    margin-right: 4.8vw;
 }
 
 
 .group54 .icon2{
-    position: absolute;
-    top: 10vh;
-    left: 58vw;
+
     height: 160px;
     width: 185px;
     padding: 1.4rem 1rem 1.1rem 1.2rem;
     border-radius: 10rem;
     background-color: #ffffff;
+    margin: 10vh 4.8vw;
 }
 
 
 .group54 .icon3{
-    position: absolute;
-    top: 10vh;
-    left: 88vw;
+
     height: 160px;
     width: 190px;
     padding: 1.4rem 1rem 1.1rem 1.2rem;
     border-radius: 10rem;
     background-color: #ffffff;
+    margin: 10vh 4.8vw;
 }
 
 .group54 .icon4{
-    position: absolute;
-    top: 65vh;
-    left: 28vw;
+
     height: 160px;
     width: 185px;
     padding: 1.3rem 1rem 1.1rem 1.2rem;
     border-radius: 10rem;
     background-color: #ffffff;
+    margin: 3vh 4.8vw;
+    margin-bottom: 2rem;
 }
 
 .group54 .icon5{
-    position: absolute;
-    top: 65vh;
-    left: 58vw;
+
     height: 160px;
     width: 185px;
     padding: 1.4rem 1rem 1.1rem 1.2rem;
     border-radius: 10rem;
     background-color: #ffffff;
+    margin: 3vh 4.8vw;
+    margin-bottom: 2rem;
 }
 
 
@@ -139,23 +157,21 @@ img{
 
 
 .group54 p{
-    position: absolute;
-    left: -1rem;
-    top: 7.5rem;
-    
+    width: 150%;
+    margin-left: -30%;
     font-size: 15px;
     line-height: 0.6rem;
 }
 
 
 .group54 h4{
-    position: absolute;
-    top: 4.3rem;
-    
+
+    width: 150%;
     font-size: 0.5rem;
+    text-align: center;
     line-height: 0.6rem;
-    margin: auto;
-    padding-top: 2rem;
+    margin-left: -35%;
+    padding-top: 1.5rem;
     
     
 }
@@ -170,7 +186,7 @@ img{
 }
 
 
-.picture2:after{
+.picture2::before{
     position: absolute;
     content: '';
     left: 0;
@@ -179,4 +195,158 @@ img{
     height: 100%;
     filter: opacity(50%);
     background-color: #1FADC7;
+}
+
+.picture2::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 88%;
+    width: 55%;
+    border-radius: 0 0 1em 0;
+    background-color: #FFF;
+    filter: opacity(70%);
+    display: flex;
+}
+
+.word{
+    width: 40%;
+    padding: 2rem 2rem;
+    line-height: 4vh;
+}
+
+.picture2 p{
+    position: relative;
+    font-size: 15px;
+    margin-left: 1.5rem;
+}
+
+.word h1{
+    font-size: 45px;
+    color: #1FADC7;
+    margin-bottom: 1.5rem;
+}
+
+
+.picture2::after{
+    content: "";
+    font-size: 15px;
+
+
+}
+
+.entry{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.picture3{
+    position: relative;
+    width: 50%;
+    height: 28vh;
+    margin-top: 3rem;
+    background-color: #EDD100;
+}
+
+.picture3::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("picture/bg-text1.png") , url("picture/円.png") , url("picture/三角.png");
+    background-position: left 50% top -10% , right 18% top 38% , right 20% top 40%;
+    background-repeat: no-repeat;
+}
+
+
+
+.picture4{
+    position: relative;
+    width: 50%;
+    height: 28vh;
+    margin-top: 3rem;
+    background-size: 100% 100%;
+    background-image: url("picture/AdobeStock_393824595 1.jpg");
+}
+
+.picture4::after{
+    position: absolute;
+    content: '・エントリー';
+    font-size: 30px;
+    color: #FFF;
+    left: 10%;
+    top: 35%;
+    width: 100%;
+    height: 100%;
+    background-image: url("picture/bg-text2.png") , url("picture/円.png") , url("picture/三角.png");
+    background-position: left 10% top 190%, right 28% top 0% , right 29% top 9%;
+    background-repeat: no-repeat;
+}
+
+.picture4::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EDCE00;
+    filter: opacity(44%);   
+}
+
+.entry p{
+    font-size: 30px;
+    color: #FFF;
+    margin: 15% 15%;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5rem;
+    background-image:  url("picture/企業ロゴ.jpg");
+    background-repeat: no-repeat;   
+    list-style: none;    
+}
+
+.footer li:hover {
+    text-decoration: underline;
+}
+
+.box1{
+    font-size: 17px;
+    width: 30%;
+    margin-left:8rem;
+}
+
+.box2{
+    font-size: 17px;
+    width: 30%;
+
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+    color: gray;
+}
+
+.footer2{
+    height: 30vh;
+    width: 94%;
+    border-top-style: solid;
+    border-width:thin;
+    margin-left: 3%;
+    font-size: 18px;
+}
+
+.footer2 a{
+    margin-left: 48vw;
+    color: #1FADC7;
+
 }
